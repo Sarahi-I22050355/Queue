@@ -21,7 +21,7 @@ namespace Queue
         {
             if (rear == maxSize - 1)
             {
-                Console.WriteLine("La cola está llena. No se puede encolar más elementos.");
+                Console.WriteLine("The queue is full. You cannot enqueue more elements.");
                 return;
             }
             queueArray[++rear] = value;
@@ -31,8 +31,8 @@ namespace Queue
         {
             if (IsEmpty())
             {
-                Console.WriteLine("La cola está vacía. No se puede desencolar ningún elemento.");
-                return -1; // Valor de retorno para indicar un error
+                Console.WriteLine("The queue is empty. You cannot dequeue any element.");
+                return -1; // Return value to indicate an error
             }
             int temp = queueArray[front++];
             return temp;
@@ -42,8 +42,8 @@ namespace Queue
         {
             if (IsEmpty())
             {
-                Console.WriteLine("La cola está vacía. No se puede consultar ningún elemento.");
-                return -1; // Valor de retorno para indicar un error
+                Console.WriteLine("The queue is empty. You cannot peek at any element.");
+                return -1; // Return value to indicate an error
             }
             return queueArray[front];
         }
@@ -58,4 +58,5 @@ namespace Queue
             return rear - front + 1;
         }
     }
+
 }

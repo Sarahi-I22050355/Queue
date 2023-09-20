@@ -12,13 +12,14 @@ namespace Queue
             queue.Enqueue(2);
             queue.Enqueue(3);
 
-            Console.WriteLine("Elemento en el frente de la cola: " + queue.Peek());
+            Console.WriteLine("Element at the front of the queue: " + queue.Peek());
 
-            Console.WriteLine("Desencolando elementos:");
+            Console.WriteLine("Dequeuing elements:");
             while (!queue.IsEmpty())
             {
                 Console.WriteLine(queue.Dequeue());
             }
         }
+
     }
 }
